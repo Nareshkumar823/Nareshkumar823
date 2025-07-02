@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us - ShopEase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">NearBuy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Our Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Service 1</a></li>
+              <li><a class="dropdown-item" href="#">Service 2</a></li>
+              <li><a class="dropdown-item" href="#">Service 3</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <section class="about-section container py-5">
+    <div class="row align-items-start">
+      <!-- Left Column -->
+      <div class="col-md-6 about-left mb-4">
+        <h6>About Us</h6>
+
+        <!-- Tabs Navigation -->
+        <ul class="nav nav-tabs mb-3" id="aboutTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="community-tab" data-bs-toggle="tab" data-bs-target="#community-text" type="button" role="tab" aria-controls="community-text" aria-selected="true">
+              Our Community
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="mission-tab" data-bs-toggle="tab" data-bs-target="#mission-text" type="button" role="tab" aria-controls="mission-text" aria-selected="false">
+              Our Mission
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="vision-tab" data-bs-toggle="tab" data-bs-target="#vision-text" type="button" role="tab" aria-controls="vision-text" aria-selected="false">
+              Our Vision
+            </button>
+          </li>
+        </ul>
+
+        <!-- Tabs Content -->
+        <div class="tab-content" id="aboutTabContent">
+          <div class="tab-pane fade show active" id="community-text" role="tabpanel" aria-labelledby="community-tab">
+            <h3>Building a Connected World</h3>
+            <p>We bring local businesses and shoppers together on one digital platform, making deals accessible to everyone, everywhere.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="tab-pane fade" id="mission-text" role="tabpanel" aria-labelledby="mission-tab">
+            <h3>Empowering Local Commerce</h3>
+            <p>Our mission is to revolutionize neighborhood shopping by bridging the gap between physical stores and digital convenience.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+          <div class="tab-pane fade" id="vision-text" role="tabpanel" aria-labelledby="vision-tab">
+            <h3>Future of Smart Shopping</h3>
+            <p>We envision a world where technology empowers every local seller to thrive while shoppers get the best deals right around them.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column with Image Tabs -->
+      <div class="col-md-6">
+        <div class="tab-content" id="aboutImageTabs">
+          <div class="tab-pane fade show active" id="community-image" role="tabpanel">
+            <img src="./assets/images/aboutimage1.jpg" class="img-fluid rounded shadow" alt="Our Community">
+          </div>
+          <div class="tab-pane fade" id="mission-image" role="tabpanel">
+            <img src="./assets/images/aboutimage2.jpg" class="img-fluid rounded shadow" alt="Our Mission">
+          </div>
+          <div class="tab-pane fade" id="vision-image" role="tabpanel">
+            <img src="./assets/images/aboutimage3.jpg" class="img-fluid rounded shadow" alt="Our Vision">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <!-- Fix: Sync Text Tabs with Image Tabs -->
+ 
+</body>
+</html>

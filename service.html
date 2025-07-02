@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - ShopEase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">ShopEase</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+              Our Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="fashion">Fashion Deals</a></li>
+              <li><a class="dropdown-item" href="gadgets">Gadgets</a></li>
+              <li><a class="dropdown-item" href="essentials">Daily Use Essentials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Fashion Deals Section -->
+  <section id="fashion" class="service-section container">
+    <h2 class="service-title">Fashion Deals</h2>
+    <div class="row">
+      <!-- Example Product -->
+      <!-- Repeat these cards for each of the 6 images -->
+      <div class="col-md-4 mb-4" *ngFor="let item of fashionItems">
+        <div class="product-card">
+          <img src="https://source.unsplash.com/300x200/?fashion" class="product-image" alt="Fashion Item">
+          <h5 class="mt-3">Stylish Shirt</h5>
+          <p>Price: ₹799</p>
+          <button class="btn btn-sm btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- Add 5 more similar cards -->
+    </div>
+  </section>
+
+  <!-- Gadgets Section -->
+  <section id="gadgets" class="service-section bg-light container">
+    <h2 class="service-title">Gadgets</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+          <img src="https://source.unsplash.com/300x200/?gadgets" class="product-image" alt="Gadget">
+          <h5 class="mt-3">Smart Watch</h5>
+          <p>Price: ₹2,999</p>
+          <button class="btn btn-sm btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- Add 5 more similar cards -->
+    </div>
+  </section>
+
+  <!-- Daily Use Essentials Section -->
+  <section id="essentials" class="service-section container">
+    <h2 class="service-title">Daily Use Essentials</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="product-card">
+          <img src="https://source.unsplash.com/300x200/?groceries" class="product-image" alt="Essential">
+          <h5 class="mt-3">Toothpaste Pack</h5>
+          <p>Price: ₹149</p>
+          <button class="btn btn-sm btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <!-- Add 5 more similar cards -->
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
